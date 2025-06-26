@@ -1,0 +1,12 @@
+/* src/index.css */
+html, body, #root, .app-container {
+  height: 100% !important; /* Esencial y con !important para anular cualquier cosa */
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important; /* Evita barras de desplazamiento no deseadas */
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+  /* NO poner el background aquí, lo controlaremos dinámicamente en App.tsx */
+}

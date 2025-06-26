@@ -1,0 +1,248 @@
+/* src/App.css */
+
+/* ---------------------------------------------------------------------- */
+/* Estilos Globales de la Aplicación */
+/* ---------------------------------------------------------------------- */
+
+/* Asegura que html, body y el elemento root (donde se monta la app React)
+   ocupen el 100% de la altura y no tengan márgenes ni padding por defecto. */
+html, body, #root {
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important; /* Evita barras de desplazamiento no deseadas */
+}
+
+/* Fuente base para toda la aplicación */
+body {
+  font-family: 'Roboto', sans-serif !important; /* Materialize CSS usa Roboto por defecto */
+}
+
+/* Contenedor principal de la aplicación.
+   Asegura que ocupe el 100% del viewport.
+   `display: flex` y `justify-content: center` / `align-items: center`
+   centran su contenido (el LoginForm) en la pantalla. */
+.app-container {
+  height: 100% !important;
+  width: 100% !important;
+  transition: background 0.5s ease-in-out !important; /* Transición suave para cambios de fondo */
+  display: flex !important;
+  justify-content: center !important; /* Centra horizontalmente el LoginForm */
+  align-items: center !important;    /* Centra verticalmente el LoginForm */
+  position: relative; /* Importante para que los hijos absolutos (logo, customizer) se posicionen respecto a este */
+}
+
+/* ---------------------------------------------------------------------- */
+/* Estilos del Logo */
+/* ---------------------------------------------------------------------- */
+
+.app-logo {
+  position: absolute !important; /* Posicionamiento flotante sobre otros elementos */
+  top: 15% !important;           /* Distancia desde la parte superior del contenedor padre */
+  left: 50% !important;          /* Centrado horizontal (margen izquierdo al 50%) */
+  transform: translateX(-50%) !important; /* Ajuste para centrar el logo en su propio eje X */
+  width: 150px !important;       /* Ancho inicial del logo (ajusta según tu imagen) */
+  height: auto !important;       /* Mantiene la proporción de la imagen */
+  z-index: 1001 !important;      /* Asegura que esté por encima del login (z-index 1000) y customizer */
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Sombra sutil para que resalte */
+  transition: all 0.3s ease-in-out !important; /* Transición suave para redimensionamiento */
+}
+
+/* ---------------------------------------------------------------------- */
+/* Estilos del Panel de Personalización (Customizer) */
+/* ---------------------------------------------------------------------- */
+
+/* Estilos por defecto (para PC - rectangular) */
+.background-customizer {
+  position: absolute !important;
+  top: 15px !important;   /* Posición desde la parte superior */
+  right: 15px !important;  /* Posición desde el lado derecho */
+  width: 200px !important; /* Ancho por defecto en PC */
+  height: auto !important; /* Altura se ajusta al contenido */
+  background-color: rgba(255, 255, 255, 0.08) !important; /* Fondo transparente ("glassmorphism") */
+  -webkit-backdrop-filter: blur(8px) !important; /* Efecto de desenfoque para navegadores WebKit */
+  backdrop-filter: blur(8px) !important;        /* Efecto de desenfoque estándar */
+  border-radius: 10px !important; /* Esquinas ligeramente redondeadas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important; /* Sombra para profundidad */
+  color: white !important; /* Color del texto dentro del panel */
+  z-index: 1000 !important; /* Asegura que esté por encima del fondo y debajo del logo */
+  padding: 8px !important; /* Espaciado interno */
+  font-size: 0.8em !important; /* Tamaño de fuente base para el panel */
+  transition: all 0.3s ease-in-out !important; /* Transición suave para todos los cambios (tamaño, posición) */
+  display: flex !important; /* Usar flexbox para el layout interno */
+  flex-direction: column !important; /* Elementos apilados verticalmente */
+  align-items: center !important; /* Centrar elementos horizontalmente */
+  justify-content: center !important; /* Centrar elementos verticalmente */
+  overflow: hidden !important; /* Oculta cualquier desbordamiento (útil para transiciones) */
+}
+
+/* Oculta el botón de alternar (abrir/cerrar) en la vista de PC */
+.background-customizer .customizer-toggle-button {
+  display: none !important;
+}
+
+/* Muestra el contenido principal del customizer en la vista de PC */
+.background-customizer .customizer-content {
+  opacity: 1 !important;
+  visibility: visible !important;
+  height: auto !important;
+  max-height: 500px !important; /* Un valor grande para permitir expansión */
+  transition: opacity 0.3s ease, max-height 0.3s ease !important;
+  width: 100% !important; /* Asegura que el contenido ocupe el ancho disponible */
+}
+
+/* Asegura que el card-content de Materialize no tenga un fondo blanco */
+.background-customizer .card-content {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    width: 100% !important; /* Ocupa todo el ancho disponible */
+}
+
+/* Estilos de los elementos internos del customizer (para PC) */
+.customizer-card-title {
+  font-size: 1rem !important; /* Título del panel */
+  font-weight: 300 !important;
+  margin-bottom: 5px !important;
+  color: white !important;
+}
+/* Estilos para el elemento <p> si lo usaras en el customizer */
+.background-customizer p {
+    margin-top: 5px !important;
+    margin-bottom: 3px !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+/* Estilos para las etiquetas de los inputs */
+.customizer-input-field label {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 0.85em !important;
+}
+/* Estilos para los campos de entrada de texto/URL */
+.customizer-input-field input {
+    color: white !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4) !important;
+    box-shadow: none !important;
+}
+/* Estilos de los inputs al enfocar */
+.customizer-input-field input:focus {
+    border-bottom: 1px solid #00b0ff !important;
+    box-shadow: 0 1px 0 0 #00b0ff !important;
+}
+/* Estilos para el input de color (color picker) */
+.color-picker-input-custom {
+  width: 100% !important;
+  height: 25px !important;
+  padding: 0 !important;
+  border: none !important;
+  border-bottom: none !important; /* Para evitar doble borde si Materialize lo añade */
+  box-shadow: none !important;
+}
+/* Clases de margen personalizado */
+.mt-10-custom {
+    margin-top: 6px !important;
+}
+.mt-20-custom {
+    margin-top: 10px !important;
+}
+.mr-10-custom {
+    margin-right: 6px !important;
+}
+/* Estilos para los botones dentro del customizer */
+.background-customizer .btn {
+    margin-top: 6px !important;
+    letter-spacing: 0.5px !important;
+    height: 28px !important;
+    line-height: 28px !important;
+    padding: 0 10px !important;
+    font-size: 0.7em !important;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Media Query para Pantallas Pequeñas (Móviles y Herramientas Dev Abiertas) */
+/* ---------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  /* Ajuste del Logo para móvil */
+  .app-logo {
+    top: 10% !important;      /* Un poco más arriba si el login sube o para mejor visibilidad */
+    width: 100px !important;  /* Logo más pequeño en móviles */
+  }
+
+  /* Transformación del Customizer a Modo Circular y Flotante */
+  .background-customizer {
+    /* Posicionamiento en la esquina inferior derecha para móvil */
+    top: auto !important;
+    bottom: 20px !important; /* Separación del borde inferior */
+    left: auto !important;
+    right: 20px !important; /* Separación del borde derecho */
+
+    /* Forma circular por defecto para móvil (estado "cerrado") */
+    width: 60px !important; /* Diámetro del círculo */
+    height: 60px !important; /* Diámetro del círculo */
+    border-radius: 50% !important; /* Hace el elemento circular */
+    padding: 0 !important; /* Elimina el padding en estado cerrado */
+    /* display: flex, align-items, justify-content ya están en el base,
+       aseguran que el icono del toggle button esté centrado */
+    cursor: pointer; /* Indica visualmente que es clicable */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important; /* Sombra un poco más pronunciada */
+  }
+
+  /* Muestra el botón de alternar (icono) en móvil */
+  .background-customizer .customizer-toggle-button {
+    display: flex !important; /* Hace que el botón de icono sea visible */
+    width: 100% !important;
+    height: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: transparent !important; /* Fondo transparente para el botón */
+  }
+  .background-customizer .customizer-toggle-button i {
+    font-size: 28px !important; /* Tamaño del icono (ej. paleta o cerrar) */
+    color: white !important; /* Color del icono */
+  }
+
+  /* Oculta el contenido principal del customizer en estado "cerrado" en móvil */
+  .background-customizer.closed .customizer-content {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    max-height: 0 !important;
+    padding: 0 !important;
+    position: absolute !important; /* Para que no ocupe espacio visible en el layout */
+    pointer-events: none !important; /* Deshabilita interacciones con el contenido oculto */
+  }
+
+  /* Estilos cuando el customizer está "abierto" en móvil */
+  .background-customizer.open {
+    width: 280px !important; /* Ancho expandido cuando está abierto */
+    height: auto !important; /* Altura se ajusta al contenido */
+    border-radius: 10px !important; /* Vuelve a ser rectangular con bordes redondeados */
+    padding: 8px !important; /* Vuelve al padding normal */
+    /* No necesitamos cambiar bottom/right aquí a menos que quieras que se mueva al abrirse */
+  }
+
+  /* Muestra el contenido del customizer cuando está "abierto" en móvil */
+  .background-customizer.open .customizer-content {
+    opacity: 1 !important;
+    visibility: visible !important;
+    height: auto !important;
+    max-height: 500px !important; /* Permite que el contenido se muestre */
+    /* Pequeño retraso en la opacidad para que la transición de tamaño se vea primero */
+    transition: opacity 0.3s ease 0.1s, max-height 0.3s ease !important;
+  }
+
+  /* Ajustes de tamaño y espaciado de elementos internos cuando el customizer está abierto en móvil */
+  .customizer-card-title {
+    font-size: 1.1rem !important; /* Tamaño más legible al abrir */
+  }
+  .customizer-input-field label {
+    font-size: 0.9em !important;
+  }
+  .color-picker-input-custom {
+    height: 30px !important;
+  }
+  .background-customizer .btn {
+    height: 35px !important;
+    line-height: 35px !important;
+    padding: 0 15px !important;
+    font-size: 0.8em !important;
+  }
+}

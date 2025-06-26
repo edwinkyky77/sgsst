@@ -1,0 +1,108 @@
+/* src/components/LoginForm/LoginForm.module.css */
+
+/* ... (El resto de .login-container y @keyframes Animation se mantiene igual) ... */
+
+/* Estilos para la tarjeta del formulario de login */
+/* ¡YA NO INCLUYE '.card' EN EL SELECTOR! */
+.login-form-card {
+  /* Estilo semi-transparente ("cristal esmerilado") - ¡ESTO ES LO CLAVE! */
+  background-color: rgba(255, 255, 255, 0.1) !important; /* Blanco con 10% de opacidad */
+  -webkit-backdrop-filter: blur(10px) !important; /* Más desenfoque */
+  backdrop-filter: blur(10px) !important;        /* Más desenfoque */
+  border-radius: 15px !important; /* Bordes redondeados */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4) !important; /* Sombra para darle profundidad */
+  border: 1px solid rgba(255, 255, 255, 0.2) !important; /* Borde sutil */
+
+  /* Dimensiones y espaciado */
+  width: 90% !important;
+  max-width: 400px !important;
+  padding: 30px !important;
+  margin: auto !important; /* Centrado horizontal */
+
+  /* Alineación del contenido interno de la tarjeta */
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+
+  /* Apariencia general */
+  color: white !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+/* IMPORTANTE: Si mantuviste el div con la clase "card-content" en LoginForm.tsx,
+   podría tener un fondo blanco de Materialize. Asegura su transparencia aquí: */
+.login-form-card .card-content {
+    background-color: transparent !important;
+    box-shadow: none !important; /* Asegurar que no tenga sombra Materialize */
+    /* Asegura que ocupe el ancho completo para el contenido */
+    width: 100% !important;
+}
+
+
+/* El resto de tus estilos para .login-form-card .input-field, etc., se mantienen igual */
+.login-form-card .input-field label {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.login-form-card .input-field input {
+  color: white !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6) !important;
+  box-shadow: none !important;
+}
+
+.login-form-card .input-field input:focus {
+  border-bottom: 1px solid #00c6ff !important;
+  box-shadow: 0 1px 0 0 #00c6ff !important;
+}
+
+.login-form-card .input-field .prefix {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.login-form-card .card-title {
+    font-size: 2.5rem !important;
+    font-weight: 300 !important;
+    margin-bottom: 40px !important;
+    color: white !important;
+    text-shadow: 0 0 15px rgba(0, 198, 255, 0.7) !important;
+}
+
+.login-form-card .card-action a {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 300 !important;
+    margin-top: 20px !important;
+    display: block !important;
+}
+
+.login-form-card .card-action a:hover {
+    color: #00c6ff !important;
+}
+
+.login-form-card button {
+    background-color: #00c6ff !important;
+    border-radius: 25px !important;
+    letter-spacing: 1px !important;
+    padding: 0 30px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out !important;
+    margin-top: 30px !important;
+    width: 100% !important;
+}
+
+.login-form-card button:hover {
+    background-color: #00aacc !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 5px 15px rgba(0, 198, 255, 0.4) !important;
+}
+
+@media (max-width: 600px) {
+  .login-form-card { /* Ya no necesita .card aquí */
+    width: 95% !important;
+    padding: 20px !important;
+  }
+  .login-form-card .card-title {
+    font-size: 2rem !important;
+  }
+}
