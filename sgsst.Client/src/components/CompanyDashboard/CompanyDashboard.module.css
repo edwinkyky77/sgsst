@@ -1,0 +1,185 @@
+/* src/components/CompanyDashboard/CompanyDashboard.module.css */
+
+.dashboardContainer {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    width: 95%; /* Ancho fluido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.companyHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+}
+
+.logoContainer {
+    width: 120px;
+    height: 120px;
+    border-radius: 0; /* Cuadrado */
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #0056b3; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.companyLogo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Para que el logo completo sea visible */
+}
+
+.noLogoPlaceholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: #666;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border-radius: 0; /* Cuadrado */
+}
+
+.companyNameTitle {
+    font-size: 2.2em;
+    color: #003366;
+    margin: 10px 0 5px 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.companyNitTitle {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dashboardGrid {
+    display: grid;
+    /* ¡CAMBIO CLAVE! Grid de 3 columnas fijas para pantallas grandes */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px; /* Espacio entre los botones */
+    width: 100%;
+    max-width: 700px; /* Ajustado para que 3 botones de 140px + gaps quepan cómodamente */
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.dashboardButton {
+    width: 140px; /* Tamaño del botón */
+    height: 140px; /* Tamaño del botón */
+    background-color: rgba(255, 255, 255, 0,5); /* Color de respaldo si la imagen no carga */
+    color: rgb(165, 13, 13);
+    border: none;
+    border-radius: 15px; /* Bordes redondeados para un aspecto moderno */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para profundidad */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    
+    background-position: center; 
+    background-repeat: no-repeat; /* Asegura que la imagen no se repita */
+    background-size: contain; /* ¡CAMBIO CLAVE! La imagen se ajusta completamente dentro del botón */
+    overflow: hidden; 
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-end; /* Alinea el texto en la parte inferior */
+    padding-bottom: 10px; /* Espacio para el texto */
+
+    /* Centra los botones dentro de la celda del grid */
+    margin: 0 auto;
+}
+
+.dashboardButton span {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para el texto */
+    color: white;
+    padding: 3px 8px; 
+    border-radius: 5px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); 
+    font-size: 0.8em; 
+    display: inline-block; 
+}
+
+.dashboardButton:hover {
+    transform: translateY(-5px) scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+/* Clases específicas para las imágenes de fondo de cada botón */
+/* ¡ACTUALIZA ESTAS RUTAS CON LAS DE TUS IMÁGENES REALES! */
+.btnEmployees { background-image: url('/images/empleados.png'); } /* Ejemplo */
+.btnEpp { background-image: url('/images/epp.png'); } /* Ejemplo */
+.btnTsa { background-image: url('/images/tsa.png'); } /* Ejemplo */
+.btnPhotography { background-image: url('/images/fotografia.png'); } /* Ejemplo */
+.btnReports { background-image: url('/images/informes.png'); } /* Ejemplo */
+.btnInspections { background-image: url('/images/inspecciones.png'); } /* Ejemplo */
+.btnHistory { background-image: url('/images/historial.png'); } /* Ejemplo */
+.btnTalks { background-image: url('/images/charlas.png'); } /* Ejemplo */
+.btnOtherFormats { background-image: url('/images/otros-formatos.png'); } /* Ejemplo */
+
+.buttonContainer {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 992px) { /* Ajustado para tablets y pantallas un poco más pequeñas */
+    .companyNameTitle {
+        font-size: 1.8em;
+    }
+    .companyNitTitle {
+        font-size: 1em;
+    }
+    .dashboardGrid {
+        grid-template-columns: repeat(2, 1fr); /* ¡CAMBIO CLAVE! 2 columnas en pantallas medianas */
+        gap: 15px;
+        max-width: 400px; /* Ajusta el ancho del grid para 2 columnas en tablets */
+    }
+    .dashboardButton {
+        width: 120px;
+        height: 120px;
+    }
+    .dashboardButton span {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 550px) { /* Ajustado para móviles pequeños */
+    .companyNameTitle {
+        font-size: 1.5em;
+    }
+    .companyNitTitle {
+        font-size: 0.9em;
+    }
+    .dashboardGrid {
+        grid-template-columns: 1fr; /* ¡CAMBIO CLAVE! Una sola columna en móviles pequeños */
+        gap: 10px;
+        max-width: 140px; /* Ancho para una sola columna */
+    }
+    .dashboardButton {
+        width: 100%; /* Ocupa el ancho completo */
+        height: 100px; /* Altura más pequeña */
+    }
+    .dashboardButton span {
+        font-size: 0.7em;
+    }
+}

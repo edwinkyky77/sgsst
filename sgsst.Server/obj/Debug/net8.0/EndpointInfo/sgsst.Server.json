@@ -96,6 +96,106 @@
         }
       }
     },
+    "/api/Empleados/register_employee": {
+      "post": {
+        "tags": [
+          "Empleados"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpleadoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpleadoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpleadoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Empresas/register_company": {
+      "post": {
+        "tags": [
+          "Empresas"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpresaDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpresaDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmpresaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Empresas": {
+      "get": {
+        "tags": [
+          "Empresas"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmpresaListDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmpresaListDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmpresaListDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/PasswordRecovery/request-reset": {
       "post": {
         "tags": [
@@ -246,6 +346,286 @@
   },
   "components": {
     "schemas": {
+      "EmpleadoDto": {
+        "required": [
+          "apellidoCompleto",
+          "barrio",
+          "cargo",
+          "direccionResidencia",
+          "eps",
+          "estadoCivil",
+          "fechaIngreso",
+          "fechaNacimiento",
+          "firmaEmpleado",
+          "fondoCesantias",
+          "fondoPensiones",
+          "genero",
+          "hojaDeVida",
+          "idEmpresa",
+          "nacionalidad",
+          "nameContact",
+          "nivelAcademico",
+          "nombreCompleto",
+          "numeroIdentificacion",
+          "observaciones",
+          "otherCourses",
+          "regimenEps",
+          "stateContract",
+          "telContacto",
+          "tipoIdentificacion",
+          "tipoSangre"
+        ],
+        "type": "object",
+        "properties": {
+          "idEmpresa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreCompleto": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "apellidoCompleto": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "genero": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string"
+          },
+          "tipoIdentificacion": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string"
+          },
+          "email": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "numeroIdentificacion": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string"
+          },
+          "fechaNacimiento": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "estadoCivil": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string"
+          },
+          "nacionalidad": {
+            "maxLength": 25,
+            "minLength": 0,
+            "type": "string"
+          },
+          "tipoSangre": {
+            "maxLength": 5,
+            "minLength": 0,
+            "type": "string"
+          },
+          "telefono": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "nameContact": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "telContacto": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "direccionResidencia": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "barrio": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "cargo": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "fechaIngreso": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "fechaEgreso": {
+            "type": "string",
+            "nullable": true
+          },
+          "stateContract": {
+            "maxLength": 15,
+            "minLength": 0,
+            "type": "string"
+          },
+          "nivelAcademico": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string"
+          },
+          "eps": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string"
+          },
+          "regimenEps": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string"
+          },
+          "fondoPensiones": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string"
+          },
+          "fondoCesantias": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string"
+          },
+          "observaciones": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "otherCourses": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "hojaDeVida": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "firmaEmpleado": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmpresaDto": {
+        "required": [
+          "contactoGerente",
+          "departamento",
+          "direccionEmpresa",
+          "direccionProyecto",
+          "email",
+          "empresaCol",
+          "logo",
+          "municipio",
+          "nitEmpresa",
+          "nombreEmpresa",
+          "nombreGerente",
+          "nombreProyecto",
+          "sisoJefe",
+          "telefonoEmpresa"
+        ],
+        "type": "object",
+        "properties": {
+          "nombreEmpresa": {
+            "type": "string",
+            "nullable": true
+          },
+          "nitEmpresa": {
+            "type": "string",
+            "nullable": true
+          },
+          "direccionEmpresa": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefonoEmpresa": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "logo": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactoGerente": {
+            "type": "string",
+            "nullable": true
+          },
+          "departamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "municipio": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombreGerente": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombreProyecto": {
+            "type": "string",
+            "nullable": true
+          },
+          "direccionProyecto": {
+            "type": "string",
+            "nullable": true
+          },
+          "sisoJefe": {
+            "type": "string",
+            "nullable": true
+          },
+          "empresaCol": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmpresaListDto": {
+        "required": [
+          "logoBase64",
+          "nitEmpresa",
+          "nombreEmpresa"
+        ],
+        "type": "object",
+        "properties": {
+          "idEmpresa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreEmpresa": {
+            "type": "string",
+            "nullable": true
+          },
+          "nitEmpresa": {
+            "type": "string",
+            "nullable": true
+          },
+          "logoBase64": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginRequest": {
         "required": [
           "alias",

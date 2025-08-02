@@ -1,0 +1,77 @@
+/* sgsst.Client/src/components/RegistroDeEmpresa/FactoryForm.module.css */
+
+.factoryFormContainer {
+  /* Propiedades eliminadas:
+     - position: absolute;
+     - top: 0;
+     - left: 0;
+     - background-color: rgba(255, 255, 255, 0.95);
+     - z-index: 99;
+     - transform: translateX(100%);
+     - opacity: 0;
+     - transition: ...;
+     Estas propiedades ahora son manejadas por .factoryFormOverlayWrapper en RegistroDeEmpresa.css
+  */
+  
+  width: 100%; /* Ocupa el 100% del ancho de su padre (el overlay) */
+  height: 100%; /* Ocupa el 100% de la altura de su padre */
+  
+  display: flex; /* Para centrar el card (.formCard) dentro de este contenedor */
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto; /* Permite scroll si el formulario es largo */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.formCard {
+  width: 100%;
+  max-width: 800px; /* Ancho máximo para el formulario */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra estándar de Materialize */
+  border-radius: 8px;
+}
+
+.formCard .card-content {
+  padding: 30px;
+}
+
+.formCard .card-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.file-field .btn {
+    background-color: #007bff; /* Color del botón de archivo */
+}
+
+/* Estilos para la previsualización del logo */
+.logoPreview {
+    margin-top: 15px;
+    text-align: center;
+}
+.logoPreview img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilos para botones de acción */
+.card-action button {
+    margin: 5px; /* Espacio entre botones */
+}
+
+/* Responsive para el formulario */
+@media screen and (max-width: 600px) {
+  .formCard .card-content {
+    padding: 15px;
+  }
+  .formCard .card-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+}

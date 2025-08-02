@@ -49,6 +49,58 @@
     ]
   },
   {
+    "ContainingType": "sgsst.Server.Controllers.EmpleadosController",
+    "Method": "RegisterEmployee",
+    "RelativePath": "api/Empleados/register_employee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empleadoDto",
+        "Type": "sgsst.Server.DTOs.EmpleadoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "sgsst.Server.Controllers.EmpresasController",
+    "Method": "GetCompanies",
+    "RelativePath": "api/Empresas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[sgsst.Server.DTOs.EmpresaListDto, sgsst.Server, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "sgsst.Server.Controllers.EmpresasController",
+    "Method": "RegisterCompany",
+    "RelativePath": "api/Empresas/register_company",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empresaDto",
+        "Type": "sgsst.Server.DTOs.EmpresaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "sgsst.Server.Controllers.PasswordRecoveryController",
     "Method": "RequestPasswordReset",
     "RelativePath": "api/PasswordRecovery/request-reset",

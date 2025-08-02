@@ -1,0 +1,1185 @@
+{
+  "septiembre": {
+    "1": [
+      "Día Mundial de la Dactiloscopia",
+      "Día Internacional de los Primates"
+    ],
+    "2": [
+      "Día Internacional de la Barba"
+    ],
+    "3": [
+      "Día Mundial del Pez Limpiador"
+    ],
+    "4": [
+      "Día Mundial de la Salud Sexual",
+      "Día Internacional del Taekwondo"
+    ],
+    "5": [
+      "Día Internacional de la Beneficencia",
+      "Día Internacional de la Mujer Indígena"
+    ],
+    "6": [
+      "Día Mundial de las Aves Playeras"
+    ],
+    "7": [
+      "Día Internacional del Aire Limpio por un Cielo Azul",
+      "Día Mundial del Buzo"
+    ],
+    "8": [
+      "Día Internacional de la Alfabetización",
+      "Día Mundial de la Fisioterapia"
+    ],
+    "9": [
+      "Día Mundial del Vehículo Eléctrico",
+      "Día Internacional de la Belleza"
+    ],
+    "10": [
+      "Día Mundial para la Prevención del Suicidio"
+    ],
+    "11": [
+      "Día de los Patriotas (en EE.UU.)",
+      "Día de Cataluña"
+    ],
+    "12": [
+      "Día Internacional de Acción contra la Migraña"
+    ],
+    "13": [
+      "Día Internacional del Chocolate",
+      "Día Mundial de la Sepsis"
+    ],
+    "14": [
+      "Día Mundial de la Dermatitis Atópica"
+    ],
+    "15": [
+      "Día Internacional de la Democracia"
+    ],
+    "16": [
+      "Día Internacional de la Preservación de la Capa de Ozono"
+    ],
+    "17": [
+      "Día Mundial de la Seguridad en el Paciente"
+    ],
+    "18": [
+      "Día Internacional de la Igualdad Salarial"
+    ],
+    "19": [
+      "Día Internacional de Concienciación de la Mordedura de Serpiente"
+    ],
+    "20": [
+      "Día Internacional del Deporte Universitario"
+    ],
+    "21": [
+      "Día Internacional de la Paz"
+    ],
+    "22": [
+      "Día Mundial sin Automóvil"
+    ],
+    "23": [
+      "Día Internacional de las Lenguas de Señas"
+    ],
+    "24": [
+      "Día Mundial del Cáncer de Tiroides"
+    ],
+    "25": [
+      "Día Mundial del Farmacéutico"
+    ],
+    "26": [
+      "Día Europeo de las Lenguas"
+    ],
+    "27": [
+      "Día Mundial del Turismo"
+    ],
+    "28": [
+      "Día Mundial contra la Rabia"
+    ],
+    "29": [
+      "Día Mundial del Corazón"
+    ],
+    "30": [
+      "Día Internacional de la Traducción"
+    ]
+  },
+  "octubre": {
+    "1": [
+      "Día Internacional del Café"
+    ],
+    "2": [
+      "Día Internacional de la No Violencia"
+    ],
+    "3": [
+      "Día Mundial del Hábitat"
+    ],
+    "4": [
+      "Día Mundial de los Animales"
+    ],
+    "5": [
+      "Día Mundial de los Docentes"
+    ],
+    "6": [
+      "Día Mundial de la Parálisis Cerebral"
+    ],
+    "7": [
+      "Nuestra Señora del Rosario"
+    ],
+    "8": [
+      "Día Mundial del Pulpo"
+    ],
+    "9": [
+      "Día Mundial del Correo"
+    ],
+    "10": [
+      "Día Mundial de la Salud Mental"
+    ],
+    "11": [
+      "Día Internacional de la Niña"
+    ],
+    "12": [
+      "Cumpleaños de la ciudad de Manizales - Caldas"
+    ],
+    "13": [
+      "Día Internacional para la Reducción de los Desastres"
+    ],
+    "14": [
+      "Día de la raza"
+    ],
+    "15": [
+      "Día Mundial del Lavado de Manos"
+    ],
+    "16": [
+      "Día Mundial de la Alimentación"
+    ],
+    "17": [
+      "Día Internacional para la Erradicación de la Pobreza"
+    ],
+    "18": [
+      "Día Mundial de la Protección de la Naturaleza"
+    ],
+    "19": [
+      "Día Internacional de la Lucha Contra el Cáncer de Mama"
+    ],
+    "20": [
+      "Día Mundial de la Estadística"
+    ],
+    "21": [
+      "Día Mundial del Ahorro de Energía"
+    ],
+    "22": [
+      "Día Mundial de la Alimentación"
+    ],
+    "23": [
+      "Día de las Naciones Unidas"
+    ],
+    "24": [
+      "Día de las Naciones Unidas"
+    ],
+    "25": [
+      "Día del Artista Nacional"
+    ],
+    "26": [
+      "Día Mundial de la Suegra"
+    ],
+    "27": [
+      "Día Mundial del Patrimonio Audiovisual"
+    ],
+    "28": [
+      "Día Mundial de la Animación"
+    ],
+    "29": [
+      "Día Nacional de la Prevención de Lavado de Activos"
+    ],
+    "30": [
+      "Día Internacional de la Lucha contra la Violencia de Género"
+    ],
+    "31": [
+      "Día de Halloween"
+    ]
+  },
+  "noviembre": {
+    "1": [
+      "Día de Todos los Santos (Internacional)",
+      "Día Mundial del Café (Internacional)"
+    ],
+    "2": [
+      "Día de los Fieles Difuntos (Colombia e Internacional)",
+      "Día Mundial de la No Violencia (Internacional)"
+    ],
+    "3": [
+      "Día Mundial del Hábitat (Internacional)"
+    ],
+    "4": [
+      "Día Mundial de los Animales (Internacional)"
+    ],
+    "5": [
+      "Día Mundial de los Docentes (Internacional)"
+    ],
+    "6": [
+      "Día Mundial de la Parálisis Cerebral (Internacional)"
+    ],
+    "7": [
+      "Nuestra Señora del Rosario (Colombia)"
+    ],
+    "8": [
+      "Día Mundial del Pulpo (Internacional)"
+    ],
+    "9": [
+      "Día Mundial del Correo (Internacional)"
+    ],
+    "10": [
+      "Día Mundial de la Salud Mental (Internacional)"
+    ],
+    "11": [
+      "Día Internacional de la Niña (Internacional)",
+      "Día de la Independencia de Cartagena (Colombia)"
+    ],
+    "12": [
+      "Día Mundial de la Alimentación (Internacional)"
+    ],
+    "13": [
+      "Día Internacional para la Reducción de los Desastres (Internacional)"
+    ],
+    "14": [
+      "Día de la Raza (Colombia)"
+    ],
+    "15": [
+      "Día Mundial del Lavado de Manos (Internacional)"
+    ],
+    "16": [
+      "Día Mundial de la Alimentación (Internacional)"
+    ],
+    "17": [
+      "Día Internacional para la Erradicación de la Pobreza (Internacional)"
+    ],
+    "18": [
+      "Día Mundial de la Protección de la Naturaleza (Internacional)"
+    ],
+    "19": [
+      "Día Internacional de la Lucha Contra el Cáncer de Mama (Internacional)"
+    ],
+    "20": [
+      "Día Mundial de la Estadística (Internacional)"
+    ],
+    "21": [
+      "Día Mundial del Ahorro de Energía (Internacional)"
+    ],
+    "22": [
+      "Día Mundial de la Alimentación (Internacional)"
+    ],
+    "23": [
+      "Día de las Naciones Unidas (Internacional)"
+    ],
+    "24": [
+      "Día de las Naciones Unidas (Internacional)"
+    ],
+    "25": [
+      "Día del Artista Nacional (Colombia)"
+    ],
+    "26": [
+      "Día Mundial de la Suegra (Internacional)"
+    ],
+    "27": [
+      "Día de la Virgen de la Medalla Milagrosa (Católico)"
+    ],
+    "28": [
+      "Día Mundial de la Animación (Internacional)"
+    ],
+    "29": [
+      "Día Nacional de la Prevención de Lavado de Activos (Colombia)"
+    ],
+    "30": [
+      "Día Internacional de la Lucha contra la Violencia de Género (Internacional)"
+    ]
+  },
+  "diciembre": {
+    "1": [
+      "Día Mundial de la Lucha contra el SIDA (Internacional)"
+    ],
+    "2": [
+      "Día Internacional para la Abolición de la Esclavitud (Internacional)"
+    ],
+    "3": [
+      "Día Internacional de las Personas con Discapacidad (Internacional)"
+    ],
+    "4": [
+      "Día de la Publicidad (Colombia)"
+    ],
+    "5": [
+      "Día Internacional de los Voluntarios (Internacional)"
+    ],
+    "6": [
+      "Día de San Nicolás (Internacional)"
+    ],
+    "7": [
+      "Día de las Velitas (Colombia)"
+    ],
+    "8": [
+      "Día de la Inmaculada Concepción (Internacional y Colombia)"
+    ],
+    "9": [
+      "Día Internacional contra la Corrupción (Internacional)"
+    ],
+    "10": [
+      "Día de los Derechos Humanos (Internacional)"
+    ],
+    "11": [
+      "Día Internacional de las Montañas (Internacional)"
+    ],
+    "12": [
+      "Aniversario de la muerte de José Jesús Calle (Familiar)",
+      "Día de la Virgen de Guadalupe (Internacional)"
+    ],
+    "13": [
+      "Día de Santa Lucía (Internacional)"
+    ],
+    "14": [
+      "Día Internacional del Mono (Internacional)"
+    ],
+    "15": [
+      "Día del Policía (Colombia)"
+    ],
+    "16": [
+      "Inicio de las Novenas de Aguinaldos (Colombia)"
+    ],
+    "17": [
+      "Día Internacional para Eliminar la Violencia contra la Mujer (Internacional)"
+    ],
+    "18": [
+      "Día Internacional del Migrante (Internacional)"
+    ],
+    "19": [
+      "Día de la Armada Nacional (Colombia)"
+    ],
+    "20": [
+      "Día Internacional de la Solidaridad Humana (Internacional)"
+    ],
+    "21": [
+      "Día del Espíritu de Navidad (Internacional)"
+    ],
+    "22": [
+      "Sorteo de Navidad (Internacional)"
+    ],
+    "23": [
+      "Día Nacional del Contador Público (Colombia)"
+    ],
+    "24": [
+      "Nochebuena (Internacional)"
+    ],
+    "25": [
+      "Navidad (Internacional)"
+    ],
+    "26": [
+      "Día de San Esteban (Internacional)"
+    ],
+    "27": [
+      "Día Internacional del Jubilado (Internacional)"
+    ],
+    "28": [
+      "Día de los Santos Inocentes (Internacional)"
+    ],
+    "29": [
+      "Día Internacional de la Diversidad Biológica (Internacional)"
+    ],
+    "30": [
+      "Día Internacional del Migrante (Internacional)"
+    ],
+    "31": [
+      "Nochevieja (Internacional)"
+    ]
+  },
+  "enero": {
+    "1": [
+      "Año Nuevo (Internacional)"
+    ],
+    "2": [
+      "Día Mundial del Introvertido (Internacional)"
+    ],
+    "3": [
+      "Día Internacional del Braille (Internacional)"
+    ],
+    "4": [
+      "Día Mundial del Hipnotismo (Internacional)"
+    ],
+    "5": [
+      "Día de la Industria Farmacéutica (Internacional)"
+    ],
+    "6": [
+      "Día de los Reyes Magos (Colombia)"
+    ],
+    "7": [
+      "Día del Ajedrez (Internacional)"
+    ],
+    "8": [
+      "Día Mundial del Comercio Justo (Internacional)"
+    ],
+    "9": [
+      "Día de las Naciones Unidas (Internacional)"
+    ],
+    "10": [
+      "Día Mundial de las Aves (Internacional)"
+    ],
+    "11": [
+      "Día Internacional del Agradecimiento (Internacional)"
+    ],
+    "12": [
+      "Día Mundial del Artista (Internacional)"
+    ],
+    "13": [
+      "Día Mundial de la Radioafición (Internacional)"
+    ],
+    "14": [
+      "Día Internacional de la Cometa (Internacional)"
+    ],
+    "15": [
+      "Día Mundial de la Lógica (Internacional)"
+    ],
+    "16": [
+      "Día Internacional de la Croqueta (Internacional)"
+    ],
+    "17": [
+      "Día de los Inventores (Internacional)"
+    ],
+    "18": [
+      "Día Mundial de la Nieve (Internacional)"
+    ],
+    "19": [
+      "Día Mundial del Popcorn (Internacional)"
+    ],
+    "20": [
+      "Día Internacional del Dj (Internacional)"
+    ],
+    "21": [
+      "Día Internacional del Abrazo (Internacional)"
+    ],
+    "22": [
+      "Día Internacional del Color (Internacional)"
+    ],
+    "23": [
+      "Día Mundial de la Libertad (Internacional)"
+    ],
+    "24": [
+      "Día Internacional de la Educación (Internacional)"
+    ],
+    "25": [
+      "Día Mundial del Community Manager (Internacional)"
+    ],
+    "26": [
+      "Día Mundial del Pescador (Internacional)"
+    ],
+    "27": [
+      "Día Internacional en Memoria de las Víctimas del Holocausto (Internacional)"
+    ],
+    "28": [
+      "Día Mundial de la Protección de Datos (Internacional)"
+    ],
+    "29": [
+      "Día Internacional del Rompecabezas (Internacional)"
+    ],
+    "30": [
+      "Día Escolar de la Paz y la No Violencia (Internacional)"
+    ],
+    "31": [
+      "Día Internacional del Mago (Internacional)"
+    ]
+  },
+  "febrero": {
+    "1": [
+      "Año Nuevo Lunar (China)",
+      "Día de la Candelaria (Colombia)"
+    ],
+    "2": [
+      "Día Mundial de la Lucha contra el SIDA (Internacional)",
+      "Día Internacional para la Abolición de la Esclavitud (Internacional)"
+    ],
+    "3": [
+      "Día Internacional del Abogado (Internacional)"
+    ],
+    "4": [
+      "Día Mundial de la Lucha contra el Cáncer (Internacional)"
+    ],
+    "5": [
+      "Día Mundial del Correo (Internacional)"
+    ],
+    "6": [
+      "Día de la Constitución (Colombia)"
+    ],
+    "7": [
+      "Día Mundial de la Diversidad Cultural para el Diálogo y el Desarrollo (Internacional)"
+    ],
+    "8": [
+      "Día Internacional de la Mujer Trabajadora (Internacional)"
+    ],
+    "9": [
+      "Día del Periodista (Colombia)"
+    ],
+    "10": [
+      "Día Mundial de la Alimentación (Internacional)"
+    ],
+    "11": [
+      "Día Internacional de la Mujer y la Niña en la Ciencia (Internacional)"
+    ],
+    "12": [
+      "Día de la Unidad Nacional (Colombia)"
+    ],
+    "13": [
+      "Día Mundial de la Radio (Internacional)"
+    ],
+    "14": [
+      "Día de San Valentín (Internacional)"
+    ],
+    "15": [
+      "Día de la Democracia (Internacional)"
+    ],
+    "16": [
+      "Día Mundial de la Paz (Internacional)"
+    ],
+    "17": [
+      "Día de la Amistad (Internacional)"
+    ],
+    "18": [
+      "Día Internacional del Síndrome de Asperger (Internacional)"
+    ],
+    "19": [
+      "Día Mundial del Corazón (Internacional)"
+    ],
+    "20": [
+      "Día Mundial de la Justicia Social (Internacional)",
+      "Día Mundial del Soltero (Internacional)"
+    ],
+    "21": [
+      "Día Internacional del Guía de Turismo (Internacional)"
+    ],
+    "22": [
+      "Día Mundial del Migrante (Internacional)"
+    ],
+    "23": [
+      "Día Mundial del Libro y del Derecho de Autor (Internacional)"
+    ],
+    "24": [
+      "Día Internacional de la Poesía (Internacional)"
+    ],
+    "25": [
+      "Día de la Independencia de la República de Chipre (Internacional)"
+    ],
+    "26": [
+      "Día Mundial de la Enfermedad de Chagas (Internacional)"
+    ],
+    "27": [
+      "Día Mundial de la Meteorología (Internacional)"
+    ],
+    "28": [
+      "Día Mundial de las Enfermedades Raras (Internacional)"
+    ]
+  },
+  "marzo": {
+    "1": [
+      "Día de la Cero Discriminación (ONU)",
+      "Día Mundial del Reciclador"
+    ],
+    "2": [
+      "Día Mundial de la Naturaleza (ONU)"
+    ],
+    "3": [
+      "Día Mundial de la Vida Silvestre"
+    ],
+    "4": [
+      "Día Mundial de la Obesidad"
+    ],
+    "5": [
+      "Día Mundial de la Eficiencia Energética"
+    ],
+    "6": [
+      "Día del Escultor (Colombia)",
+      "Día Internacional del Linfedema"
+    ],
+    "7": [
+      "Día del Campo (Colombia)"
+    ],
+    "8": [
+      "Día Internacional de la Mujer",
+      "Día del Trovador y el Poeta (Colombia)"
+    ],
+    "9": [
+      "Día Mundial del Riñón"
+    ],
+    "10": [
+      "Día del Médico (Colombia)"
+    ],
+    "11": [
+      "Día Mundial del Glaucoma"
+    ],
+    "12": [
+      "Día Mundial del Glaucoma"
+    ],
+    "13": [
+      "Día Mundial del Sueño"
+    ],
+    "14": [
+      "Día Internacional de las Matemáticas",
+      "Día del Número Pi"
+    ],
+    "15": [
+      "Día Mundial de los Derechos del Consumidor",
+      "Día Internacional contra la Violencia Policial"
+    ],
+    "16": [
+      "Día Mundial del Trabajo Social"
+    ],
+    "17": [
+      "Día de San Patricio (Irlanda y mundial)"
+    ],
+    "18": [
+      "Día Mundial del Trabajo Social"
+    ],
+    "19": [
+      "Día de San José",
+      "Día del Hombre (Colombia)",
+      "Día del Carpintero (Colombia)"
+    ],
+    "20": [
+      "Día Internacional de la Felicidad (ONU)",
+      "Equinoccio de marzo (hemisferio norte: primavera, hemisferio sur: otoño)"
+    ],
+    "21": [
+      "Día Internacional de la Eliminación de la Discriminación Racial",
+      "Día Mundial del Síndrome de Down"
+    ],
+    "22": [
+      "Día Mundial del Agua (ONU)"
+    ],
+    "23": [
+      "Día Meteorológico Mundial (ONU)",
+      "Día del Optómetra (Colombia)"
+    ],
+    "24": [
+      "Día Internacional del Derecho a la Verdad (ONU)",
+      "Día Mundial de la Tuberculosis"
+    ],
+    "25": [
+      "Día Internacional de Solidaridad con el Personal Detenido y Desaparecido (ONU)"
+    ],
+    "26": [
+      "Día Mundial del Clima",
+      "Día Púrpura (epilepsia)"
+    ],
+    "27": [
+      "Día Mundial del Teatro"
+    ],
+    "28": [
+      "Día del Respeto a los Derechos de los Pensionados (Colombia)"
+    ],
+    "29": [
+      "Día Mundial del Piano"
+    ],
+    "30": [
+      "Día Internacional de las Trabajadoras del Hogar"
+    ],
+    "31": [
+      "Día Internacional de la Visibilidad Transgénero"
+    ]
+  },
+  "abril": {
+    "1": [
+      "Día Mundial de la Educación",
+      "Día Internacional de las Bromas (April Fools' Day)"
+    ],
+    "2": [
+      "Día Mundial de Concienciación sobre el Autismo (ONU)",
+      "Día del Libro Infantil y Juvenil"
+    ],
+    "3": [
+      "Día del Juez (Colombia)"
+    ],
+    "4": [
+      "Día Internacional de Información sobre el Peligro de las Minas (ONU)"
+    ],
+    "5": [
+      "Día Internacional de la Conciencia (ONU)"
+    ],
+    "6": [
+      "Día Internacional del Deporte para el Desarrollo y la Paz (ONU)"
+    ],
+    "7": [
+      "Día Mundial de la Salud (OMS)",
+      "Día de la Memoria y Solidaridad con las Víctimas (Colombia)"
+    ],
+    "8": [
+      "Día Internacional del Pueblo Gitano"
+    ],
+    "9": [
+      "Día Nacional de la Memoria y Solidaridad con las Víctimas (Colombia)"
+    ],
+    "10": [
+      "Día del Investigador Científico (Colombia)"
+    ],
+    "11": [
+      "Día Mundial del Parkinson"
+    ],
+    "12": [
+      "Día Internacional de los Vuelos Espaciales Tripulados (ONU)"
+    ],
+    "13": [
+      "Día del Beso",
+      "Día del idioma"
+    ],
+    "14": [
+      "Día de las Américas"
+    ],
+    "15": [
+      "Día Mundial del Arte"
+    ],
+    "16": [
+      "Día Mundial de la Voz"
+    ],
+    "17": [
+      "Día Mundial de la Hemofilia"
+    ],
+    "18": [
+      "Día Internacional de los Monumentos y Sitios (UNESCO)"
+    ],
+    "19": [
+      "Día del Aborigen Americano",
+      "Día de la Bicicleta (Colombia)"
+    ],
+    "20": [
+      "Día del Idioma Chino (ONU)",
+      "Día Mundial de la Marihuana (no oficial)"
+    ],
+    "21": [
+      "Día de la Creatividad y la Innovación (ONU)"
+    ],
+    "22": [
+      "Día Internacional de la Madre Tierra (ONU)"
+    ],
+    "23": [
+      "Día Mundial del Libro y del Derecho de Autor (UNESCO)",
+      "Día del Idioma Español (en honor a Cervantes)",
+      "Día del Bibliotecólogo (Colombia)"
+    ],
+    "24": [
+      "Día Internacional del Multilateralismo y la Diplomacia para la Paz (ONU)"
+    ],
+    "25": [
+      "Día Mundial del Paludismo (OMS)",
+      "Día del Niño (Colombia)"
+    ],
+    "26": [
+      "Día Mundial de la Propiedad Intelectual (ONU)",
+      "Día de la Secretaria (Colombia)"
+    ],
+    "27": [
+      "Día Mundial del Diseño"
+    ],
+    "28": [
+      "Día Mundial de la Seguridad y Salud en el Trabajo (ONU)"
+    ],
+    "29": [
+      "Día Internacional de la Danza (UNESCO)"
+    ],
+    "30": [
+      "Día del Psicólogo (Colombia)",
+      "Día Internacional del Jazz (UNESCO)"
+    ]
+  },
+
+  "mayo": {
+    "1": [
+      "Día del Trabajo (Internacional)",
+      "Día de la Madre (Colombia)"
+    ],
+    "2": [
+      "Día Mundial del Atún (Internacional)"
+    ],
+    "3": [
+      "Día Mundial de la Libertad de Prensa (Internacional)",
+      "Día de la Cruz (Colombia)"
+    ],
+    "4": [
+      "Día Internacional de los Bomberos (Internacional)",
+      "Día de Star Wars (Internacional)"
+    ],
+    "5": [
+      "Día Internacional de la Comadrona (Internacional)",
+      "Día Mundial de la Higiene de Manos (Internacional)"
+    ],
+    "6": [
+      "Día Internacional Sin Dietas (Internacional)"
+    ],
+    "7": [
+      "Día Mundial del Asma (Internacional)"
+    ],
+    "8": [
+      "Día Mundial de la Cruz Roja y de la Media Luna Roja (Internacional)",
+      "Día Mundial del Talasémico (Internacional)"
+    ],
+    "9": [
+      "Día de Europa (Internacional)",
+      "Día Internacional de las Aves Migratorias (Internacional)"
+    ],
+    "10": [
+      "Día Mundial del Lupus (Internacional)"
+    ],
+    "11": [
+      "Día Mundial de las Aves Migratorias (Internacional)"
+    ],
+    "12": [
+      "Día Internacional de la Enfermería (Internacional)",
+      "Día Internacional de la Fibromialgia (Internacional)"
+    ],
+    "13": [
+      "Día de la Virgen de Fátima (Internacional)"
+    ],
+    "14": [
+      "Día Mundial de la Migración de los Peces (Internacional)"
+    ],
+    "15": [
+      "Día Internacional de las Familias (Internacional)",
+      "Día del Maestro (Colombia)"
+    ],
+    "16": [
+      "Día Internacional de la Luz (Internacional)",
+      "Día Internacional de la Convivencia en Paz (Internacional)"
+    ],
+    "17": [
+      "Día Mundial de Internet (Internacional)",
+      "Día Mundial de la Hipertensión (Internacional)"
+    ],
+    "18": [
+      "Día Internacional de los Museos (Internacional)"
+    ],
+    "19": [
+      "Día Mundial de la Enfermedad Inflamatoria Intestinal (Internacional)"
+    ],
+    "20": [
+      "Día Mundial de las Abejas (Internacional)",
+      "Día Mundial de la Metrología (Internacional)"
+    ],
+    "21": [
+      "Día Mundial de la Diversidad Cultural para el Diálogo y el Desarrollo (Internacional)"
+    ],
+    "22": [
+      "Día Internacional de la Diversidad Biológica (Internacional)"
+    ],
+    "23": [
+      "Día Internacional para la Eliminación de la Fístula Obstétrica (Internacional)"
+    ],
+    "24": [
+      "Día del Contador Público (Colombia)"
+    ],
+    "25": [
+      "Día de África (Internacional)",
+      "Día del Orgullo Geek (Internacional)"
+    ],
+    "26": [
+      "Día Nacional del Patrimonio (Colombia)"
+    ],
+    "27": [
+      "Día Mundial del Juego (Internacional)"
+    ],
+    "28": [
+      "Día Internacional de Acción por la Salud de la Mujer (Internacional)",
+      "Día Mundial de la Nutrición (Internacional)"
+    ],
+    "29": [
+      "Día Internacional de los Cascos Azules de las Naciones Unidas (Internacional)"
+    ],
+    "30": [
+      "Día Mundial de la Esclerosis Múltiple (Internacional)"
+    ],
+    "31": [
+      "Día Mundial Sin Tabaco (Internacional)"
+    ]
+  },
+  "junio": {
+    "1": [
+      "Día Mundial de los Padres (Internacional)",
+      "Día Mundial de la Leche (Internacional)"
+    ],
+    "2": [
+      "Ascensión del Señor (Colombia)"
+    ],
+    "3": [
+      "Día Mundial de la Bicicleta (Internacional)"
+    ],
+    "4": [
+      "Día Internacional de los Niños Víctimas Inocentes de Agresión (Internacional)"
+    ],
+    "5": [
+      "Día Mundial del Medio Ambiente (Internacional)"
+    ],
+    "6": [
+      "Día Mundial de los Pacientes Trasplantados (Internacional)",
+      "Día del Idioma Ruso (Internacional)"
+    ],
+    "7": [
+      "Día Mundial de la Seguridad Alimentaria (Internacional)"
+    ],
+    "8": [
+      "Día Mundial de los Océanos (Internacional)"
+    ],
+    "9": [
+      "Día Internacional de los Archivos (Internacional)"
+    ],
+    "10": [
+      "Día Mundial del Té (Internacional)"
+    ],
+    "11": [
+      "Día Mundial del Cáncer de Próstata (Internacional)"
+    ],
+    "12": [
+      "Día Mundial contra el Trabajo Infantil (Internacional)"
+    ],
+    "13": [
+      "Día Internacional de Sensibilización sobre el Albinismo (Internacional)"
+    ],
+    "14": [
+      "Día Mundial del Donante de Sangre (Internacional)"
+    ],
+    "15": [
+      "Día Mundial de Toma de Conciencia de Abuso y Maltrato en la Vejez (Internacional)"
+    ],
+    "16": [
+      "Día Internacional de las Remesas Familiares (Internacional)"
+    ],
+    "17": [
+      "Día Mundial de Lucha contra la Desertificación y la Sequía (Internacional)"
+    ],
+    "18": [
+      "Día de la Gastronomía Sostenible (Internacional)"
+    ],
+    "19": [
+      "Día Internacional para la Eliminación de la Violencia Sexual en los Conflictos (Internacional)"
+    ],
+    "20": [
+      "Día Mundial de los Refugiados (Internacional)"
+    ],
+    "21": [
+      "Día Internacional del Yoga (Internacional)",
+      "Día Mundial de la Esclerosis Lateral Amiotrófica (Internacional)"
+    ],
+    "22": [
+      "Día Mundial del Cáncer de Riñón (Internacional)"
+    ],
+    "23": [
+      "Corpus Christi (Colombia)",
+      "Día Internacional de las Viudas (Internacional)"
+    ],
+    "24": [
+      "Día Internacional del Fairy (Internacional)"
+    ],
+    "25": [
+      "Día de la Gente de Mar (Internacional)"
+    ],
+    "26": [
+      "Día Internacional de la Lucha contra el Uso Indebido y el Tráfico Ilícito de Drogas (Internacional)",
+      "Día Internacional de las Naciones Unidas en Apoyo de las Víctimas de la Tortura (Internacional)"
+    ],
+    "27": [
+      "Día de las Microempresas y las Pequeñas y Medianas Empresas (Internacional)"
+    ],
+    "28": [
+      "Día Internacional del Orgullo LGBTI (Internacional)"
+    ],
+    "29": [
+      "Día Internacional de los Trópicos (Internacional)",
+      "San Pedro y San Pablo (Colombia)"
+    ],
+    "30": [
+      "Día Internacional de los Asteroides (Internacional)",
+      "Sagrado Corazón de Jesús (Colombia)"
+    ]
+  },
+  "julio": {
+    "1": [
+      "Día Internacional de las Cooperativas (Internacional)"
+    ],
+    "2": [
+      "Día Mundial de los Ovnis (Internacional)"
+    ],
+    "3": [
+      "Día Internacional Libre de Bolsas de Plástico (Internacional)"
+    ],
+    "4": [
+      "Día Internacional de la Independencia de Estados Unidos (Internacional)"
+    ],
+    "5": [
+      "Día Mundial del Bikini (Internacional)"
+    ],
+    "6": [
+      "Día Internacional del Beso (Internacional)",
+      "Día Mundial de la Zoonosis (Internacional)"
+    ],
+    "7": [
+      "Día Mundial del Cacao (Internacional)"
+    ],
+    "8": [
+      "Día Mundial de la Alergia (Internacional)"
+    ],
+    "9": [
+      "Día Internacional de la Destrucción de Armas Químicas (Internacional)"
+    ],
+    "10": [
+      "Día Mundial de la Ciencia, la Tecnología y la Innovación (Internacional)"
+    ],
+    "11": [
+      "Día Mundial de la Población (Internacional)"
+    ],
+    "12": [
+      "Día del Malabares (Internacional)"
+    ],
+    "13": [
+      "Día Mundial del Rock (Internacional)"
+    ],
+    "14": [
+      "Día Mundial del Chimpancé (Internacional)"
+    ],
+    "15": [
+      "Día Mundial de las Habilidades de la Juventud (Internacional)"
+    ],
+    "16": [
+      "Día Mundial de las Serpientes (Internacional)"
+    ],
+    "17": [
+      "Día Mundial del Emoji (Internacional)"
+    ],
+    "18": [
+      "Día Internacional de Nelson Mandela (Internacional)"
+    ],
+    "19": [
+      "Día Mundial del Retrete (Internacional)"
+    ],
+    "20": [
+      "Día de la Independencia de Colombia (Colombia)",
+      "Día Mundial del Ajedrez (Internacional)"
+    ],
+    "21": [
+      "Día Mundial del Perro (Internacional)"
+    ],
+    "22": [
+      "Día Mundial del Cerebro (Internacional)"
+    ],
+    "23": [
+      "Día Mundial de las Ballenas y los Delfines (Internacional)"
+    ],
+    "24": [
+      "Día Internacional de las Mujeres Afrodescendientes (Internacional)"
+    ],
+    "25": [
+      "Día Mundial de la Prevención del Ahogamiento (Internacional)"
+    ],
+    "26": [
+      "Día Mundial de los Abuelos (Internacional)"
+    ],
+    "27": [
+      "Día Mundial de los Jaguares (Internacional)"
+    ],
+    "28": [
+      "Día Mundial de la Hepatitis (Internacional)"
+    ],
+    "29": [
+      "Día Internacional del Tigre (Internacional)"
+    ],
+    "30": [
+      "Día Internacional de la Amistad (Internacional)",
+      "Día Mundial contra la Trata de Personas (Internacional)"
+    ],
+    "31": [
+      "Día Mundial del Orgasmo (Internacional)"
+    ]
+  },
+  "agosto": {
+    "1": [
+      "Día Mundial de la Lactancia Materna (Internacional)"
+    ],
+    "2": [
+      "Día Internacional de la Cerveza (Internacional)"
+    ],
+    "3": [
+      "Día Internacional de la Planificación Familiar (Internacional)"
+    ],
+    "4": [
+      "Día Internacional de la Obstetricia y la Embarazada (Internacional)"
+    ],
+    "5": [
+      "Día Internacional de la Cerveza (Internacional)"
+    ],
+    "6": [
+      "Día de Hiroshima (Internacional)"
+    ],
+    "7": [
+      "Batalla de Boyacá (Colombia)"
+    ],
+    "8": [
+      "Día Internacional del Gato (Internacional)"
+    ],
+    "9": [
+      "Día Internacional de los Pueblos Indígenas (Internacional)",
+      "Día Internacional de Solidaridad con la Lucha de la Mujer en Sudáfrica y Namibia (Internacional)"
+    ],
+    "10": [
+      "Día Mundial del León (Internacional)"
+    ],
+    "11": [
+      "Día Internacional de la Montaña (Internacional)"
+    ],
+    "12": [
+      "Día Internacional de la Juventud (Internacional)"
+    ],
+    "13": [
+      "Día Internacional de los Zurdos (Internacional)"
+    ],
+    "14": [
+      "Día Mundial de la Asistencia Humanitaria (Internacional)"
+    ],
+    "15": [
+      "Asunción de la Virgen (Colombia)",
+      "Día Mundial de la Relajación (Internacional)"
+    ],
+    "16": [
+      "Día Mundial de la Gastronomía (Internacional)"
+    ],
+    "17": [
+      "Día Mundial del Gato Negro (Internacional)"
+    ],
+    "18": [
+      "Día Mundial de la Fotografía (Internacional)"
+    ],
+    "19": [
+      "Día Mundial de la Asistencia Humanitaria (Internacional)"
+    ],
+    "20": [
+      "Día Mundial del Mosquito (Internacional)"
+    ],
+    "21": [
+      "Día Internacional del Recuerdo y Homenaje a las Víctimas del Terrorismo (Internacional)"
+    ],
+    "22": [
+      "Día Internacional de Conmemoración de las Víctimas de Actos de Violencia Basados en la Religión o las Creencias (Internacional)"
+    ],
+    "23": [
+      "Día Internacional del Recuerdo del Comercio de Esclavos y de su Abolición (Internacional)"
+    ],
+    "24": [
+      "Día de San Bartolomé (Internacional)"
+    ],
+    "25": [
+      "Día del Adulto Mayor (Colombia)"
+    ],
+    "26": [
+      "Día Internacional contra el Dengue (Internacional)"
+    ],
+    "27": [
+      "Día del Psicólogo (Colombia)"
+    ],
+    "28": [
+      "Día del Abuelo (Colombia)"
+    ],
+    "29": [
+      "Día Internacional contra los Ensayos Nucleares (Internacional)"
+    ],
+    "30": [
+      "Día Internacional de los Desaparecidos (Internacional)"
+    ],
+    "31": [
+      "Día Internacional de la Solidaridad (Internacional)"
+    ]
+  }
+}

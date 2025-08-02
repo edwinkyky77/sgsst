@@ -1,10 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "I:\\Proyecto\\sgsst\\",
+  "WorkspaceRootPath": "H:\\Proyecto\\sgsst\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|i:\\proyecto\\sgsst\\sgsst.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|h:\\proyecto\\sgsst\\sgsst.server\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|solutionrelative:sgsst.server\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|h:\\proyecto\\sgsst\\sgsst.server\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|solutionrelative:sgsst.server\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|h:\\proyecto\\sgsst\\sgsst.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|solutionrelative:sgsst.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Proyecto\\sgsst\\sgsst.Server\\Migrations\\20250730002114_AddEmpleadoTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sgsst.Server\\Migrations\\20250730002114_AddEmpleadoTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|h:\\proyecto\\sgsst\\sgsst.server\\services\\passwordrecovery\\passwordrecoveryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|solutionrelative:sgsst.server\\services\\passwordrecovery\\passwordrecoveryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|h:\\proyecto\\sgsst\\sgsst.server\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|solutionrelative:sgsst.server\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|h:\\proyecto\\sgsst\\sgsst.server\\services\\notifications\\imessagesender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|solutionrelative:sgsst.server\\services\\notifications\\imessagesender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|h:\\proyecto\\sgsst\\sgsst.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|solutionrelative:sgsst.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|h:\\proyecto\\sgsst\\sgsst.server\\services\\notifications\\whatsappsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|solutionrelative:sgsst.server\\services\\notifications\\whatsappsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|h:\\proyecto\\sgsst\\sgsst.server\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|solutionrelative:sgsst.server\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|h:\\proyecto\\sgsst\\sgsst.server\\data\\sgsstdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|solutionrelative:sgsst.server\\data\\sgsstdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|h:\\proyecto\\sgsst\\sgsst.server\\dtos\\empleadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|solutionrelative:sgsst.server\\dtos\\empleadodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|h:\\proyecto\\sgsst\\sgsst.server\\models\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|solutionrelative:sgsst.server\\models\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|h:\\proyecto\\sgsst\\sgsst.server\\migrations\\20250730011842_creartablaempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F40B251F-60DB-4EA7-A310-901D472F3931}|sgsst.Server\\sgsst.Server.csproj|solutionrelative:sgsst.server\\migrations\\20250730011842_creartablaempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +66,176 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "I:\\Proyecto\\sgsst\\sgsst.Server\\Program.cs",
-              "RelativeDocumentMoniker": "sgsst.Server\\Program.cs",
-              "ToolTip": "I:\\Proyecto\\sgsst\\sgsst.Server\\Program.cs",
-              "RelativeToolTip": "sgsst.Server\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABQAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "20250730011842_CrearTablaEmpleado.cs",
+              "DocumentMoniker": "H:\\Proyecto\\sgsst\\sgsst.Server\\Migrations\\20250730011842_CrearTablaEmpleado.cs",
+              "RelativeDocumentMoniker": "sgsst.Server\\Migrations\\20250730011842_CrearTablaEmpleado.cs",
+              "ToolTip": "H:\\Proyecto\\sgsst\\sgsst.Server\\Migrations\\20250730011842_CrearTablaEmpleado.cs",
+              "RelativeToolTip": "sgsst.Server\\Migrations\\20250730011842_CrearTablaEmpleado.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T01:29:34.71Z",
+              "WhenOpened": "2025-07-30T01:18:42.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "H:\\Proyecto\\sgsst\\sgsst.Server\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "sgsst.Server\\Services\\AuthService.cs",
+              "ToolTip": "H:\\Proyecto\\sgsst\\sgsst.Server\\Services\\AuthService.cs",
+              "RelativeToolTip": "sgsst.Server\\Services\\AuthService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAUwEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T01:44:21.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IMessageSender.cs",
+              "DocumentMoniker": "H:\\Proyecto\\sgsst\\sgsst.Server\\Services\\Notifications\\IMessageSender.cs",
+              "RelativeDocumentMoniker": "sgsst.Server\\Services\\Notifications\\IMessageSender.cs",
+              "ToolTip": "H:\\Proyecto\\sgsst\\sgsst.Server\\Services\\Notifications\\IMessageSender.cs",
+              "RelativeToolTip": "sgsst.Server\\Services\\Notifications\\IMessageSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T01:28:25.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WhatsAppSender.cs",
+              "DocumentMoniker": "H:\\Proyecto\\sgsst\\sgsst.Server\\Services\\Notifications\\WhatsAppSender.cs",
+              "RelativeDocumentMoniker": "sgsst.Server\\Services\\Notifications\\WhatsAppSender.cs",
+              "ToolTip": "H:\\Proyecto\\sgsst\\sgsst.Server\\Services\\Notifications\\WhatsAppSender.cs",
+              "RelativeToolTip": "sgsst.Server\\Services\\Notifications\\WhatsAppSender.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T01:24:46.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmpleadoController.cs",
+              "DocumentMoniker": "H:\\Proyecto\\sgsst\\sgsst.Server\\Controllers\\EmpleadoController.cs",
+              "RelativeDocumentMoniker": "sgsst.Server\\Controllers\\EmpleadoController.cs",
+              "ToolTip": "H:\\Proyecto\\sgsst\\sgsst.Server\\Controllers\\EmpleadoController.cs",
+              "RelativeToolTip": "sgsst.Server\\Controllers\\EmpleadoController.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAgwK4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T01:59:24.424Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EmpleadoDto.cs",
+              "DocumentMoniker": "H:\\Proyecto\\sgsst\\sgsst.Server\\DTOs\\EmpleadoDto.cs",
+              "RelativeDocumentMoniker": "sgsst.Server\\DTOs\\EmpleadoDto.cs",
+              "ToolTip": "H:\\Proyecto\\sgsst\\sgsst.Server\\DTOs\\EmpleadoDto.cs",
+              "RelativeToolTip": "sgsst.Server\\DTOs\\EmpleadoDto.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAADwv3sAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T01:56:23.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Empleado.cs",
+              "DocumentMoniker": "H:\\Proyecto\\sgsst\\sgsst.Server\\Models\\Empleado.cs",
+              "RelativeDocumentMoniker": "sgsst.Server\\Models\\Empleado.cs",
+              "ToolTip": "H:\\Proyecto\\sgsst\\sgsst.Server\\Models\\Empleado.cs",
+              "RelativeToolTip": "sgsst.Server\\Models\\Empleado.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAYwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T01:55:33.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250730002114_AddEmpleadoTable.cs",
+              "DocumentMoniker": "H:\\Proyecto\\sgsst\\sgsst.Server\\Migrations\\20250730002114_AddEmpleadoTable.cs",
+              "RelativeDocumentMoniker": "sgsst.Server\\Migrations\\20250730002114_AddEmpleadoTable.cs",
+              "ToolTip": "H:\\Proyecto\\sgsst\\sgsst.Server\\Migrations\\20250730002114_AddEmpleadoTable.cs",
+              "RelativeToolTip": "sgsst.Server\\Migrations\\20250730002114_AddEmpleadoTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T00:21:15.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SgsstDbContext.cs",
+              "DocumentMoniker": "H:\\Proyecto\\sgsst\\sgsst.Server\\Data\\SgsstDbContext.cs",
+              "RelativeDocumentMoniker": "sgsst.Server\\Data\\SgsstDbContext.cs",
+              "ToolTip": "H:\\Proyecto\\sgsst\\sgsst.Server\\Data\\SgsstDbContext.cs",
+              "RelativeToolTip": "sgsst.Server\\Data\\SgsstDbContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T01:50:29.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "H:\\Proyecto\\sgsst\\sgsst.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "sgsst.Server\\appsettings.json",
+              "ToolTip": "H:\\Proyecto\\sgsst\\sgsst.Server\\appsettings.json",
+              "RelativeToolTip": "sgsst.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-28T17:33:16.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PasswordRecoveryService.cs",
+              "DocumentMoniker": "H:\\Proyecto\\sgsst\\sgsst.Server\\Services\\PasswordRecovery\\PasswordRecoveryService.cs",
+              "RelativeDocumentMoniker": "sgsst.Server\\Services\\PasswordRecovery\\PasswordRecoveryService.cs",
+              "ToolTip": "H:\\Proyecto\\sgsst\\sgsst.Server\\Services\\PasswordRecovery\\PasswordRecoveryService.cs",
+              "RelativeToolTip": "sgsst.Server\\Services\\PasswordRecovery\\PasswordRecoveryService.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAgwK0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T00:17:35.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmpresaController.cs",
+              "DocumentMoniker": "H:\\Proyecto\\sgsst\\sgsst.Server\\Controllers\\EmpresaController.cs",
+              "RelativeDocumentMoniker": "sgsst.Server\\Controllers\\EmpresaController.cs",
+              "ToolTip": "H:\\Proyecto\\sgsst\\sgsst.Server\\Controllers\\EmpresaController.cs",
+              "RelativeToolTip": "sgsst.Server\\Controllers\\EmpresaController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAADwv3MAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T17:32:50.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Empresa.cs",
+              "DocumentMoniker": "H:\\Proyecto\\sgsst\\sgsst.Server\\Models\\Empresa.cs",
+              "RelativeDocumentMoniker": "sgsst.Server\\Models\\Empresa.cs",
+              "ToolTip": "H:\\Proyecto\\sgsst\\sgsst.Server\\Models\\Empresa.cs",
+              "RelativeToolTip": "sgsst.Server\\Models\\Empresa.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAA4wDYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T17:30:05.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "H:\\Proyecto\\sgsst\\sgsst.Server\\Program.cs",
+              "RelativeDocumentMoniker": "sgsst.Server\\Program.cs",
+              "ToolTip": "H:\\Proyecto\\sgsst\\sgsst.Server\\Program.cs",
+              "RelativeToolTip": "sgsst.Server\\Program.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAgwMgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T01:29:34.71Z"
             }
           ]
         }

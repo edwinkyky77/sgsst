@@ -1,0 +1,374 @@
+/* Estilos generales */
+html, body {
+    height: 100%; /* ¡CLAVE! Asegura que html y body ocupen el 100% de la altura del viewport */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* Fondo general de la página */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px; /* Ancho de sidebars y centro para PC */
+    grid-template-rows: auto 1fr auto; /* Header (auto), contenido principal (1fr), footer (auto) */
+    height: 100%; /* ¡CLAVE! El contenedor principal también ocupa el 100% de la altura disponible */
+    gap: 10px; /* Espacio entre las secciones */
+    max-width: 1200px; /* Limita el ancho máximo para evitar que se vea muy estirado en monitores grandes */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 10px; /* Padding general para que no se pegue a los bordes */
+    box-sizing: border-box; /* Incluir padding en el ancho */
+}
+
+/* ========================================= */
+/* HEADER: "Diana's SGSST" - Más impactante con efecto "alucinante" */
+/* ========================================= */
+.header {
+    grid-column: 1 / -1; /* Ocupa todas las columnas */
+    /* ¡CAMBIO CLAVE! Fondo blanco con 30% de opacidad */
+    background-color: rgba(255, 255, 255, 0.3); /* Blanco con 30% de opacidad */
+    color: #003366; /* Color de texto más oscuro para contraste */
+    padding: 25px; /* Más padding para impacto */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada para resaltar */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    display: flex; /* Para centrar el h1 verticalmente */
+    align-items: center;
+    justify-content: center;
+    position: sticky; /* Hace que el header se mantenga fijo en la parte superior al hacer scroll */
+    top: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3.2em; /* Tamaño de fuente grande para impacto visual */
+    font-weight: 700; /* Texto más negrita */
+    /* Ajuste de sombra de texto para el nuevo fondo claro */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 51, 102, 0.5); /* Sombra más suave y brillo azul más sutil */
+    letter-spacing: 3px; /* Mayor espaciado entre letras para un look más estilizado */
+    transition: transform 0.4s ease-in-out, color 0.4s ease-in-out, text-shadow 0.4s ease-in-out; /* Transición suave para todos los efectos al pasar el ratón */
+}
+
+.header h1:hover {
+    transform: scale(1.08); /* Efecto de escala más pronunciado al pasar el ratón */
+    color: #0056b3; /* Cambio a un azul más oscuro y vibrante al pasar el ratón */
+    /* Efecto de brillo más intenso al pasar el ratón */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), 0 0 15px #003366; /* Sombra más oscura y brillo azul más fuerte */
+    cursor: pointer; /* Indica que es interactivo */
+}
+
+/* Sidebars */
+.sidebar {
+    /* ¡CAMBIO CLAVE! Fondo blanco con 30% de opacidad */
+    background-color: rgba(255, 255, 255, 0.3); /* Blanco con 30% de opacidad */
+    color: #333; /* Color de texto más oscuro para contraste */
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Permite scroll si el contenido es largo */
+    border-radius: 8px;
+}
+
+.left-sidebar {
+    grid-column: 1 / 2;
+    border-right: 1px solid rgba(150, 150, 150, 0.3); /* Borde semitransparente ajustado para fondo claro */
+}
+
+.right-sidebar {
+    grid-column: 3 / 4;
+    border-left: 1px solid rgba(150, 150, 150, 0.3); /* Borde semitransparente ajustado para fondo claro */
+}
+
+.sidebar h2 {
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #003366; /* Borde más pronunciado, oscuro para contraste */
+    padding-bottom: 8px;
+    text-transform: uppercase; /* Mayúsculas para los títulos */
+    color: #003366; /* Color de título para sidebar, oscuro para contraste */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #a0c012; /* Azul para los enlaces, más oscuro para contraste */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+    color: #003366; /* Más oscuro al pasar el ratón */
+}
+
+/* ========================================= */
+/* Contenido Principal (main-content) y Botones con Imagen de Fondo */
+/* ========================================= */
+.main-content {
+    grid-column: 2 / 3;
+    /* ¡CAMBIO CLAVE! Fondo blanco con 30% de opacidad */
+    background-color: rgba(255, 255, 255, 0.3); /* Blanco con 30% de opacidad */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* ¡CLAVE! Permite scroll si el contenido es largo */
+    border-radius: 8px;
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    
+    height: 100%; 
+    min-height: 0; 
+}
+
+.main-content h2 {
+    width: 100%; 
+    text-align: center; 
+    color: #003366;
+    font-size: 1.8em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de los botones para alinearlos izquierda y derecha */
+.button-container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 100%; 
+    max-width: 700px; 
+    margin-top: 30px; 
+}
+
+.action-button {
+    width: 140px; 
+    height: 140px; 
+    background-color: #007BFF; /* Color de respaldo si la imagen no carga */
+    color: white;
+    border: none;
+    border-radius: 15px; 
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    overflow: hidden; 
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-end; 
+    padding-bottom: 10px; 
+
+    margin: 0 auto; 
+}
+
+/* Definir las imágenes de fondo para cada botón */
+.left-button {
+    background-image: url('/images/register-company.png');
+}
+
+.right-button {
+    background-image: url('/images/view-companies.png');
+}
+
+/* Estilos para el texto (span) dentro de los botones */
+.action-button span {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 3px 8px; 
+    border-radius: 5px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); 
+    font-size: 0.8em; 
+    display: inline-block; 
+}
+
+/* Efectos al pasar el ratón (hover) */
+.action-button:hover {
+    transform: translateY(-5px) scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+/* Estilos para el botón deshabilitado */
+.action-button.disabled {
+    background-color: #cccccc; 
+    cursor: not-allowed;
+    opacity: 0.7; 
+    transform: none; 
+    box-shadow: none; 
+    filter: grayscale(100%); 
+}
+
+.action-button.disabled:hover {
+    background-color: #cccccc; 
+    box-shadow: none;
+    opacity: 0.7; 
+    filter: grayscale(100%); 
+}
+
+/* Footer */
+.footer {
+    grid-column: 1 / -1; 
+    /* ¡CAMBIO CLAVE! Fondo blanco con 30% de opacidad */
+    background-color: rgba(255, 255, 255, 0.3); /* Blanco con 30% de opacidad */
+    color: #333; /* Color de texto más oscuro para contraste */
+    padding: 15px;
+    text-align: center;
+    font-size: 0.95em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.footer .celebration-info {
+    background-color: rgba(0, 51, 102, 0.7); /* Azul oscuro con más opacidad para contraste sobre fondo claro */
+    padding: 12px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF; /* Texto blanco para contraste */
+    line-height: 1.5;
+}
+
+.footer .celebration-info span {
+    display: block;
+    margin-top: 5px;
+}
+
+/* Clases para mensajes de estado */
+.error-message {
+    color: #e74c3c; 
+    font-weight: bold;
+}
+
+
+/* ========================================= */
+/* MEDIA QUERIES PARA RESPONSIVE (Móviles y Tablets) */
+/* ========================================= */
+
+/* Para pantallas medianas (tabletas, laptops pequeñas) - 992px de ancho o menos */
+@media screen and (max-width: 992px) { 
+    .container {
+        grid-template-columns: 1fr; 
+        grid-template-areas:
+            "header"
+            "left-sidebar"
+            "right-sidebar"
+            "main-content"
+            "footer";
+        padding: 5px; 
+        height: auto; 
+        min-height: 100vh; 
+    }
+
+    .header {
+        grid-area: header;
+        border-radius: 0; 
+    }
+
+    .left-sidebar {
+        grid-area: left-sidebar;
+        border-right: none;
+        border-bottom: 1px solid rgba(150, 150, 150, 0.3); /* Ajustado para fondo claro */
+        border-radius: 0;
+    }
+
+    .right-sidebar {
+        grid-area: right-sidebar;
+        border-left: none;
+        border-bottom: 1px solid rgba(150, 150, 150, 0.3); /* Ajustado para fondo claro */
+        border-radius: 0;
+    }
+
+    .main-content {
+        grid-area: main-content;
+        border-radius: 0;
+        padding: 15px; 
+    }
+
+    .footer {
+        grid-area: footer;
+        border-radius: 0;
+    }
+
+    /* Ajustar tamaños de fuente para tablets */
+    .header h1 {
+        font-size: 2.5em; 
+        letter-spacing: 2px;
+    }
+    .sidebar h2 {
+        font-size: 1.1em;
+    }
+    .main-content h2 {
+        font-size: 1.6em;
+    }
+    .footer .celebration-info {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+
+    /* Ajustes para botones en tablets: 2 columnas */
+    .button-container {
+        grid-template-columns: repeat(2, 1fr); 
+        max-width: 500px; 
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) - 550px de ancho o menos */
+@media screen and (max-width: 550px) { 
+    .header h1 {
+        font-size: 1.8em; 
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 51, 102, 0.5); /* Ajustado */
+    }
+
+    .sidebar {
+        padding: 10px; 
+    }
+
+    .sidebar h2 {
+        font-size: 1em;
+    }
+
+    .main-content {
+        padding: 10px; 
+    }
+
+    .main-content h2 {
+        font-size: 1.4em;
+    }
+
+    .footer .celebration-info {
+        font-size: 0.85em;
+        padding: 8px 15px;
+    }
+
+    /* Comportamiento de los botones en móviles: 1 columna */
+    .button-container {
+        grid-template-columns: 1fr; 
+        max-width: 160px; 
+    }
+
+    .action-button {
+        width: 100%; 
+        margin: 10px auto; 
+    }
+    .factoryFormOverlayWrapper {
+        padding: 5px; 
+    }
+}

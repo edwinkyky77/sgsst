@@ -87,7 +87,7 @@ const LoginForm: React.FC = () => {
 
       <div className={styles['login-form-card']}>
         <div className="card-content">
-          <span className={styles['card-title']}>Login</span>
+          <span className={styles['card-title']}>Diana's SGSST</span>
           <form onSubmit={handleSubmit}>
             {error && <p style={{ color: 'red', marginBottom: '15px' }}>{error}</p>}
 

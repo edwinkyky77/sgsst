@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "I:\\Proyecto\\sgsst\\sgsst.Server\\sgsst.Server.csproj": {}
+    "H:\\Proyecto\\sgsst\\sgsst.Server\\sgsst.Server.csproj": {}
   },
   "projects": {
-    "I:\\Proyecto\\sgsst\\sgsst.Server\\sgsst.Server.csproj": {
+    "H:\\Proyecto\\sgsst\\sgsst.Server\\sgsst.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "I:\\Proyecto\\sgsst\\sgsst.Server\\sgsst.Server.csproj",
+        "projectUniqueName": "H:\\Proyecto\\sgsst\\sgsst.Server\\sgsst.Server.csproj",
         "projectName": "sgsst.Server",
-        "projectPath": "I:\\Proyecto\\sgsst\\sgsst.Server\\sgsst.Server.csproj",
+        "projectPath": "H:\\Proyecto\\sgsst\\sgsst.Server\\sgsst.Server.csproj",
         "packagesPath": "C:\\Users\\Edwinkyky\\.nuget\\packages\\",
-        "outputPath": "I:\\Proyecto\\sgsst\\sgsst.Server\\obj\\",
+        "outputPath": "H:\\Proyecto\\sgsst\\sgsst.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,6 +69,12 @@
               "target": "Package",
               "version": "[9.0.6, )"
             },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.17, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[9.0.0-preview.3.efcore.9.0.0, )"
@@ -101,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

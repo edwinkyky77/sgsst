@@ -1,0 +1,186 @@
+/* src/components/CompanyList/CompanyList.module.css */
+
+.companyListContainer {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    width: 95%; /* Ancho fluido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Las propiedades de scroll (max-height, overflow-y) se manejan en el main-content global */
+}
+
+.title {
+    color: #003366;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+.noCompaniesMessage {
+    font-size: 1.2em;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.companiesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Grid de 3 columnas fijas */
+    gap: 30px; /* Espacio entre tarjetas */
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.companyCard {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.companyCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.logoContainer {
+    width: 120px;
+    height: 120px;
+    border-radius: 0; /* Cuadrado */
+    overflow: hidden;
+    margin-bottom: 15px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #0056b3; /* Borde para el logo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.companyLogo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Para que el logo completo sea visible dentro del cuadrado */
+}
+
+.noLogoPlaceholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: #666;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border-radius: 0; /* Cuadrado para el placeholder */
+}
+
+.companyName {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.companyNit {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.buttonContainer {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 992px) { /* Para tablets y pantallas un poco más pequeñas */
+    .companiesGrid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) { /* Para tablets en vertical y móviles grandes */
+    .companyListContainer {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .title {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    .companiesGrid {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        gap: 20px;
+    }
+
+    .companyCard {
+        padding: 15px;
+    }
+
+    .logoContainer {
+        width: 100px; /* Ajuste el tamaño del logo para pantallas más pequeñas */
+        height: 100px;
+    }
+
+    .noLogoPlaceholder {
+        font-size: 2.5em;
+    }
+
+    .companyName {
+        font-size: 1.3em;
+    }
+
+    .companyNit {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) { /* Para móviles muy pequeños */
+    .companyListContainer {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .title {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .logoContainer {
+        width: 80px; /* Ajuste el tamaño del logo para pantallas muy pequeñas */
+        height: 80px;
+    }
+
+    .noLogoPlaceholder {
+        font-size: 2em;
+    }
+
+    .companyName {
+        font-size: 1.2em;
+    }
+
+    .companyNit {
+        font-size: 0.85em;
+    }
+}

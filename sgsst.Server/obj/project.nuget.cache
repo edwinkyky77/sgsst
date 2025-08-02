@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3jCj5ZZIoOc=",
+  "dgSpecHash": "gnGuNVsTb0Q=",
   "success": true,
-  "projectFilePath": "I:\\Proyecto\\sgsst\\sgsst.Server\\sgsst.Server.csproj",
+  "projectFilePath": "H:\\Proyecto\\sgsst\\sgsst.Server\\sgsst.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Edwinkyky\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\Edwinkyky\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -34,6 +34,7 @@
     "C:\\Users\\Edwinkyky\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.6\\microsoft.entityframeworkcore.analyzers.9.0.6.nupkg.sha512",
     "C:\\Users\\Edwinkyky\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.6\\microsoft.entityframeworkcore.design.9.0.6.nupkg.sha512",
     "C:\\Users\\Edwinkyky\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.6\\microsoft.entityframeworkcore.relational.9.0.6.nupkg.sha512",
+    "C:\\Users\\Edwinkyky\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.17\\microsoft.entityframeworkcore.tools.8.0.17.nupkg.sha512",
     "C:\\Users\\Edwinkyky\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Edwinkyky\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.6\\microsoft.extensions.caching.abstractions.9.0.6.nupkg.sha512",
     "C:\\Users\\Edwinkyky\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.6\\microsoft.extensions.caching.memory.9.0.6.nupkg.sha512",

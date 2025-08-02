@@ -51,10 +51,13 @@ builder.Services.AddHttpClient();
 // Registro de servicios de notificación (Email y WhatsApp) usando Keyed Services
 // Esto permite inyectar diferentes implementaciones de IMessageSender por un nombre clave.
 builder.Services.AddKeyedScoped<IMessageSender>("whatsapp", (sp, key) =>
-    new WhatsAppSender(sp.GetRequiredService<IConfiguration>(), sp.GetRequiredService<HttpClient>()));
+    new WhatsAppSender(sp.GetRequiredService<IConfiguration>(),
+                       sp.GetRequiredService<HttpClient>(),
+                       sp.GetRequiredService<ILogger<WhatsAppSender>>())); // ¡CORRECCIÓN AQUÍ! Inyección de ILogger
 
 builder.Services.AddKeyedScoped<IMessageSender>("email", (sp, key) =>
-    new EmailSender(sp.GetRequiredService<IConfiguration>()));
+    new EmailSender(sp.GetRequiredService<IConfiguration>(),
+                    sp.GetRequiredService<ILogger<EmailSender>>())); // ¡CORRECCIÓN AQUÍ! Inyección de ILogger
 
 // Registro del normalizador de números de teléfono para Colombia
 builder.Services.AddScoped<IPhoneNumberNormalizer, ColombiaPhoneNumberNormalizer>();
@@ -89,16 +92,16 @@ builder.Services.AddAuthentication(options =>
     // Configuración de los parámetros de validación del token JWT
     options.TokenValidationParameters = new TokenValidationParameters
     {
-        ValidateIssuer = true,        // Valida el emisor del token
-        ValidateAudience = true,      // Valida la audiencia del token
-        ValidateLifetime = true,      // Valida la vida útil del token (expiración)
+        ValidateIssuer = true,       // Valida el emisor del token
+        ValidateAudience = true,     // Valida la audiencia del token
+        ValidateLifetime = true,     // Valida la vida útil del token (expiración)
         ValidateIssuerSigningKey = true, // Valida la clave de firma del emisor
 
-        ValidIssuer = issuer,         // El emisor válido configurado en appsettings.json
-        ValidAudience = audience,     // La audiencia válida configurada en appsettings.json
+        ValidIssuer = issuer,        // El emisor válido configurado en appsettings.json
+        ValidAudience = audience,    // La audiencia válida configurada en appsettings.json
         // La clave de firma del emisor, generada a partir del secreto JWT
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secret)),
-        ClockSkew = TimeSpan.Zero     // No permite tiempo de "desfase" en la expiración del token
+        ClockSkew = TimeSpan.Zero    // No permite tiempo de "desfase" en la expiración del token
     };
 });
 
@@ -108,9 +111,9 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigin", // Nombre de la política CORS
         builder => builder.WithOrigins("http://localhost:5173") // <-- ¡IMPORTANTE! Reemplaza con la URL de tu frontend React
-                          .AllowAnyHeader()    // Permite cualquier tipo de encabezado en las solicitudes
-                          .AllowAnyMethod()    // Permite cualquier método HTTP (GET, POST, PUT, DELETE, etc.)
-                          .AllowCredentials()); // Permite el envío de credenciales (cookies, encabezados de autorización)
+                            .AllowAnyHeader()    // Permite cualquier tipo de encabezado en las solicitudes
+                            .AllowAnyMethod()    // Permite cualquier método HTTP (GET, POST, PUT, DELETE, etc.)
+                            .AllowCredentials()); // Permite el envío de credenciales (cookies, encabezados de autorización)
 });
 
 
@@ -123,11 +126,10 @@ var app = builder.Build();
 // Configuración específica para el entorno de desarrollo
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();     // Habilita el middleware de Swagger
-    app.UseSwaggerUI();   // Habilita la interfaz de usuario de Swagger
+    app.UseSwagger();    // Habilita el middleware de Swagger
+    app.UseSwaggerUI();  // Habilita la interfaz de usuario de Swagger
 }
 
-// Redirecciona solicitudes HTTP a HTTPS
 app.UseHttpsRedirection();
 
 // Usa la política CORS definida (debe ir antes de UseAuthentication/UseAuthorization)

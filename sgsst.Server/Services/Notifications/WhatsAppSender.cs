@@ -1,60 +1,93 @@
-﻿// Services/Notifications/WhatsAppSender.cs
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
-using System.Web; // Para HttpUtility.UrlEncode
+using System.Text.Json; // For JSON serialization
+using Microsoft.Extensions.Logging; // For logging
 
 namespace sgsst.Server.Services.Notifications
 {
+    // ¡IMPORTANTE! La definición de IMessageSender ha sido ELIMINADA de aquí.
+    // Asegúrate de que IMessageSender esté definida en su propio archivo (ej. IMessageSender.cs)
+    // en este mismo namespace (sgsst.Server.Services.Notifications).
+
     public class WhatsAppSender : IMessageSender
     {
-        private readonly IConfiguration _configuration;
         private readonly HttpClient _httpClient;
+        private readonly IConfiguration _configuration;
+        private readonly ILogger<WhatsAppSender> _logger; // Inyección de logger
 
-        public WhatsAppSender(IConfiguration configuration, HttpClient httpClient)
+        // Constructor que recibe HttpClient e IConfiguration a través de la inyección de dependencias
+        public WhatsAppSender(IConfiguration configuration, HttpClient httpClient, ILogger<WhatsAppSender> logger)
         {
             _configuration = configuration;
             _httpClient = httpClient;
+            _logger = logger;
+            // Opcional: Configurar la URL base de la API de WhatsApp aquí si es fija
+            // _httpClient.BaseAddress = new Uri(_configuration["WhatsAppApi:BaseUrl"]);
         }
 
-        public async Task<bool> SendMessage(string destination, string message)
+        public async Task SendAsync(string recipient, string subject, string message)
         {
-            var whatsappSettings = _configuration.GetSection("WhatsAppSettings");
-            var apiUrl = whatsappSettings.GetValue<string>("ApiUrl");
-            var token = whatsappSettings.GetValue<string>("Token"); // Esto es un ejemplo, tu API real tendrá su propio Auth.
+            _logger.LogInformation("Attempting to send WhatsApp message to {Recipient} with subject: {Subject}", recipient, subject);
 
-            if (string.IsNullOrEmpty(apiUrl) || string.IsNullOrEmpty(token))
+            var whatsappApiUrl = _configuration["WhatsAppApi:Url"]; // URL de la API de WhatsApp
+            var whatsappApiKey = _configuration["WhatsAppApi:ApiKey"]; // Clave de API
+            var whatsappSenderId = _configuration["WhatsAppApi:SenderId"]; // ID del remitente (ej. número de teléfono)
+
+            if (string.IsNullOrEmpty(whatsappApiUrl) || string.IsNullOrEmpty(whatsappApiKey) || string.IsNullOrEmpty(whatsappSenderId))
             {
-                // Considera lanzar una excepción o registrar un error
-                return false;
+                _logger.LogError("WhatsApp API configuration missing. Please check appsettings.json for 'WhatsAppApi:Url', 'WhatsAppApi:ApiKey', and 'WhatsAppApi:SenderId'.");
+                throw new InvalidOperationException("WhatsApp API configuration is incomplete.");
             }
 
-            // --- ESTE ES UN EJEMPLO BÁSICO DE URL, NO LA IMPLEMENTACIÓN DE UNA API REAL ---
-            // Una API real de WhatsApp (ej. Twilio, Vonage, 360dialog) requerirá un POST a un endpoint
-            // con un JSON en el cuerpo y un token de autorización en los headers.
-            // Esto es solo un placeholder para demostrar el concepto de integración.
             try
             {
-                // Ejemplo simple de cómo construir una URL para enviar un mensaje (no es una API real)
-                // Usualmente, sería un POST a un endpoint específico con la autenticación adecuada.
-                // Aquí simulamos el envío de un enlace directo de WhatsApp Web/App
-                var encodedMessage = HttpUtility.UrlEncode(message);
-                var requestUri = $"{apiUrl}?phone={destination}&text={encodedMessage}";
+                // Construir el cuerpo de la petición JSON para la API de WhatsApp
+                // Este formato puede variar según la API de WhatsApp que estés utilizando (ej. Twilio, Meta Business API, etc.)
+                var requestBody = new
+                {
+                    to = recipient,
+                    from = whatsappSenderId,
+                    body = message,
+                    // subject = subject // Algunas APIs pueden no usar un "subject" para WhatsApp
+                };
 
-                // En una implementación real, sería algo como esto (con tu proveedor de API):
-                // var content = new StringContent(JsonConvert.SerializeObject(new { to = destination, body = message }), Encoding.UTF8, "application/json");
-                // _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                // var response = await _httpClient.PostAsync(apiUrl, content);
-                // return response.IsSuccessStatusCode;
+                var jsonContent = new StringContent(
+                    JsonSerializer.Serialize(requestBody),
+                    Encoding.UTF8,
+                    "application/json"
+                );
 
-                // Para este ejemplo simple, solo "simulamos" el envío
-                Console.WriteLine($"Simulando envío de WhatsApp a {destination}: {message}");
-                return true; // Asumimos éxito para el ejemplo
+                // Añadir el encabezado de autorización (si la API lo requiere)
+                _httpClient.DefaultRequestHeaders.Clear(); // Limpiar encabezados previos
+                _httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {whatsappApiKey}"); // Ejemplo: Token Bearer
+                // O si es una clave directa: _httpClient.DefaultRequestHeaders.Add("X-API-Key", whatsappApiKey);
+
+                // Realizar la petición POST a la API de WhatsApp
+                var response = await _httpClient.PostAsync(whatsappApiUrl, jsonContent);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    _logger.LogInformation("WhatsApp message sent successfully to {Recipient}.", recipient);
+                }
+                else
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    _logger.LogError("Failed to send WhatsApp message to {Recipient}. Status Code: {StatusCode}. Response: {ErrorContent}",
+                                     recipient, response.StatusCode, errorContent);
+                    throw new HttpRequestException($"Failed to send WhatsApp message. Status: {response.StatusCode}, Response: {errorContent}");
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                _logger.LogError(ex, "HTTP request error when sending WhatsApp message to {Recipient}.", recipient);
+                throw new InvalidOperationException($"Error de red al enviar mensaje de WhatsApp: {ex.Message}", ex);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error al enviar WhatsApp: {ex.Message}");
-                return false;
+                _logger.LogError(ex, "An unexpected error occurred while sending WhatsApp message to {Recipient}.", recipient);
+                throw new InvalidOperationException($"Error inesperado al enviar mensaje de WhatsApp: {ex.Message}", ex);
             }
         }
     }

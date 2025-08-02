@@ -10,12 +10,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using BCrypt.Net;
 using Microsoft.Extensions.Logging; // Asegúrate de tener esto
+using Microsoft.AspNetCore.Mvc; // ¡NUEVO! Necesario para [FromKeyedServices]
 
 namespace sgsst.Server.Services.PasswordRecovery
 {
     public class PasswordRecoveryService : IPasswordRecoveryService
     {
-        private readonly SgsstDbContext _context; // ¡CORREGIDO! SgsstDbContext
+        private readonly SgsstDbContext _context;
         private readonly IMessageSender _whatsappSender;
         private readonly IMessageSender _emailSender;
         private readonly IPhoneNumberNormalizer _phoneNumberNormalizer;
@@ -23,7 +24,7 @@ namespace sgsst.Server.Services.PasswordRecovery
         private readonly IConfiguration _configuration;
 
         public PasswordRecoveryService(
-            SgsstDbContext context, // ¡CORREGIDO! SgsstDbContext
+            SgsstDbContext context,
             [FromKeyedServices("whatsapp")] IMessageSender whatsappSender,
             [FromKeyedServices("email")] IMessageSender emailSender,
             IPhoneNumberNormalizer phoneNumberNormalizer,
@@ -78,17 +79,20 @@ namespace sgsst.Server.Services.PasswordRecovery
             await _context.SaveChangesAsync();
 
             var messageBody = $"Tu código de recuperación de contraseña para SGSST es: {code}. Válido por {expirationMinutes} minutos.";
+            var emailSubject = "Recuperación de Contraseña SGSST"; // Asunto para el correo electrónico
 
             bool sent = false;
             if (request.Method.Equals("whatsapp", StringComparison.OrdinalIgnoreCase))
             {
-                if (string.IsNullOrEmpty(user.WhatsApp)) // ¡CORREGIDO! Usar user.WhatsApp
+                if (string.IsNullOrEmpty(user.WhatsApp))
                 {
                     _logger.LogWarning("Usuario {Alias} intentó recuperación por WhatsApp sin número registrado.", user.Alias);
                     return (false, "No se encontró un número de WhatsApp registrado para este usuario.");
                 }
-                var normalizedPhoneNumber = _phoneNumberNormalizer.Normalize(user.WhatsApp); // ¡CORREGIDO! Normalizar WhatsApp
-                sent = await _whatsappSender.SendMessage(normalizedPhoneNumber, messageBody);
+                var normalizedPhoneNumber = _phoneNumberNormalizer.Normalize(user.WhatsApp);
+                // ¡CORRECCIÓN CLAVE AQUÍ! Cambiado SendMessage a SendAsync y añadido el subject
+                await _whatsappSender.SendAsync(normalizedPhoneNumber, emailSubject, messageBody);
+                sent = true; // Asumimos éxito si no lanza excepción
             }
             else if (request.Method.Equals("email", StringComparison.OrdinalIgnoreCase))
             {
@@ -97,7 +101,9 @@ namespace sgsst.Server.Services.PasswordRecovery
                     _logger.LogWarning("Usuario {Alias} intentó recuperación por Email sin email registrado.", user.Alias);
                     return (false, "No se encontró un email registrado para este usuario.");
                 }
-                sent = await _emailSender.SendMessage(user.Email, messageBody);
+                // ¡CORRECCIÓN CLAVE AQUÍ! Cambiado SendMessage a SendAsync y añadido el subject
+                await _emailSender.SendAsync(user.Email, emailSubject, messageBody);
+                sent = true; // Asumimos éxito si no lanza excepción
             }
             else
             {
